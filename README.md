@@ -38,7 +38,7 @@ Please note from a Data Science perspective:
 
 The assignment insists on using Logistic regression on the set features above and gives a probability of
 click for each offer. This has not allowed the candidate to explore other algorithms that might be able to
-better differentiate the classes. To properly optimize the Logistic regression, it will be essential to
+better differentiate the classes. To properly optimize the Logistic regression metrics, it will be essential to
 understand what the business case will be. Accuracy is not a good measure in this case because of the
 imbalanced dataset and based on the business case we can adjust the threshold of the Logistic
 regression to affect the precision, recall and F1 score. To handle the imbalance in the dataset, we used
