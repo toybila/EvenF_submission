@@ -41,3 +41,8 @@ understand what the business case will be. Accuracy is not a good measure in thi
 imbalanced dataset and based on the business case we can adjust the threshold of the Logistic
 regression to affect the precision, recall and F1 score. To handle the imbalance in the dataset, we used
 an up sampling approach.
+
+# Future Work
+Configure Flask API codes to effectively handle exceptions.
+Optimize training code using functions.
+Discuss business case to properly adjust logistic regression threshold.
