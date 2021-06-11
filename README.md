@@ -8,11 +8,11 @@ compose.yml file
 
 Manually, if preferred, the commands to do this individually are:
 
-docker-compose up –build db
+docker-compose up -d --build db
 
-docker-compose up –build app
+docker-compose up -d --build app
 
-docker-compose up –build trainer
+docker-compose up -d --build trainer
 
 Once, all the containers are running the API endpoints will be available on
 
