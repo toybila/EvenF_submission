@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  trainer:
+    build: ./Train/
+    ports:
+    - "5000:5000"
+    depends_on:
+        db:
+            condition: service_healthy
+
+  app :
+    build: ./app/
+    depends_on: 
+        db:
+            condition : service_healthy
+  db:
+    build: ./database/
+    ports: 
+    - "5432:5432"
+    healthcheck:
+        test: ["CMD-SHELL", "pg_isready -d database -U username"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
