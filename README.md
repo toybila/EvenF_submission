@@ -23,14 +23,12 @@ http://127.0.0.1:5000/predict_multiple_api for multiple offers.
 Please refer to the file request.py and batchrequest.py for the sample JSON formatting for the API
 calls.
 
-The endpoints can be tested with these files or you can test with postman or any other api testing
+The endpoints can be tested with these files or with postman or any other api testing
 software.
 
 At the background the Docker file does the following: it spins up a postgresql server and also writes files
-into it using python, the Dockerfile waits for the database to be healthy before attempting to right.
-
-All the files for this is included in the github repository.
-
+into it using python, the Dockerfile waits for the database to be healthy before attempting to write.
+All the files for these is included in the github repository.
 Once the database is setup, the training file is executed which trains the model using logistic regression
 and then finally deploys the FlaskAPI server.
 
