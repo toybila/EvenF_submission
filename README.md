@@ -32,7 +32,7 @@ All the files for these is included in the github repository.
 Once the database is setup, the training file is executed which trains the model using logistic regression
 and then finally deploys the FlaskAPI server.
 
-Please note from a Data Science perspective:
+# Data Science perspective:
 
 The assignment insists on using Logistic regression on the set features above and gives a probability of
 click for each offer. This has not allowed the candidate to explore other algorithms that might be able to
@@ -44,5 +44,7 @@ an up sampling approach.
 
 # Future Work
 Configure Flask API codes to effectively handle exceptions.
+
 Optimize training code using functions.
+
 Discuss business case to properly adjust logistic regression threshold.
